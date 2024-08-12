@@ -1,8 +1,37 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlassignment</title>
+    <link rel="stylesheet" href="~/css/home.css">
+</head>
+<body>
+    <form action="/" method="post">
+        <div class="main">
+            <div class="text">
+                <h1>Discover the perfect</h1>
+                <h2>destinations in <span class="orange">India</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent turpis orci, tincidunt consequat lorem ut, ultrices imperdiet sapien. Pellentesque id.</p>
+                <p>
+                    freestar
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium magna sit amet fringilla semper. Fusce a justo in massa consequat imperdiet a vitae ligula. Donec nulla nulla, tincidunt in tellus quis, viverra viverra arcu.
+                </p>
+                <button class="btn" type="submit" asp-controller="Email" asp-action="BeginTest">Enquire now</button>
+            </div>
+            <div class="img-grid">
+                <img src="https://i.pinimg.com/736x/16/34/f0/1634f0ea04e3c1a50af4926b5d5cab03.jpg" />
+                <img src="https://as1.ftcdn.net/v2/jpg/02/18/09/44/1000_F_218094432_0bUFuyupjcX5mJMtPS1nD5KG3GlEhGLX.jpg" />
+                <img src="https://img.freepik.com/premium-photo/mountain-lake-with-lake-mountains-background_948735-126493.jpg" />
+                <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/iStock_000058485880_XXXLarge.jpg" />
+                <img src="https://cdn.britannica.com/95/152295-050-041D8C96/Camels-state-Rajasthan-India.jpg" />
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/a0/3c/01/shyam-temple.jpg" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

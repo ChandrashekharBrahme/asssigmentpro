@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Asssigment.ViewModels.QuestionResultViewModel>
+
+@{
+    ViewData["Title"] = "Results";
+    int questionNumber = 1;
+
+}
+
+<div style="border: 1px solid #000; padding: 10px; ">
+    <h3 style="text-align: center;">Exam Result</h3>
+    <p style="text-align: center;">@ViewBag.TotalMarks out of 10 answers are correct.</p>
+
+    @foreach (var result in Model)
+    {
+        <div style="margin-bottom: 15px; margin-right:auto">
+            <p><strong>Q @questionNumber. @result.Question</strong></p>
+            <p><b>Correct Ans:</b> @result.CorrectAnswer</p>
+            <p><b>Your Ans:</b> @result.SelectedAnswer</p>
+            <br />
+        </div>
+        questionNumber++;
+    }
+</div>

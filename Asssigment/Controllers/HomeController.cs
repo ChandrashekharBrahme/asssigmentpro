@@ -1,6 +1,7 @@
 using Asssigment.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net;
 
 namespace Asssigment.Controllers
 {
@@ -11,6 +12,8 @@ namespace Asssigment.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            ////Cookie ck = new Cookie("email", value);
+            ////Response.WriteAsync
         }
 
         public IActionResult Index()

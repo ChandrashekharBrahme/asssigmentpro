@@ -1,7 +1,40 @@
-﻿
+﻿@model Asssigment.Models.Questions
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Question";
 }
+<div style="margin-top: 20px; margin-bottom: auto ;border: 1px solid #000; padding: 10px;">
+<form asp-action="Index" method="post">
+        <p>
+            <div>
+            <b style="font-size:large">QUESTION:</b>
+            </div>
+            @Model.QuestionText
+        </p>
 
-<h1>Index</h1>
+        <div>
+            <b style="font-size:large">ANSWER:</b>
+        </div>
+     
+    <input type="hidden" name="id" value="@Model.Id" />
 
+    <div>
+        <input type="radio" id="Answer1" name="selectedAnswer" value="@Model.Answer1" />
+        <label for="Answer1">@Model.Answer1</label>
+    </div>
+    <div>
+        <input type="radio" id="Answer2" name="selectedAnswer" value="@Model.Answer2" />
+        <label for="Answer2">@Model.Answer2</label>
+    </div>
+    <div>
+        <input type="radio" id="Answer3" name="selectedAnswer" value="@Model.Answer3" />
+        <label for="Answer3">@Model.Answer3</label>
+    </div>
+    <div>
+        <input type="radio" id="Answer4" name="selectedAnswer" value="@Model.Answer4" />
+        <label for="Answer4">@Model.Answer4</label>
+    </div>
+
+    <button type="submit">Next</button>
+</form>
+</div>
